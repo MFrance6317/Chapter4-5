@@ -4,7 +4,7 @@ using namespace std;
 
 int rightChoice()
 {
-	/*int sideChoice;
+	int sideChoice;
 
 	cout << "What side are you solving for? Side A(1) Side B(2) Side C(3) ";
 	cin >> sideChoice;
@@ -15,17 +15,17 @@ int rightChoice()
 	}
 	else if (sideChoice == 2)
 	{
-		rightB;
+		rightB();
 	}
 	else if (sideChoice == 3)
 	{
-
+		rightC();
 	}
 	
 	return 0;
 }
 
-int rightTriangle()
+int rightA()
 {
 
 	double rA;
@@ -35,7 +35,61 @@ int rightTriangle()
 	double rArea;
 	double squareRoot;
 
-	/*cout << "Insert A: ";
+	cout << "Insert B: ";
+	cin >> rA;
+	cout << "Insert C: ";
+	cin >> rB;
+
+	rA = (rB*rB) + (rC*rC);
+	squareRoot = sqrt(rA * 1);
+	rP = rA + rB + squareRoot;
+	rArea = (rA * rB) / 2;
+
+	cout << "A = " << squareRoot << endl;
+	cout << "Perimeter = " << rP << endl;
+	cout << "Area = " << rArea << endl;
+
+	return 0;
+}
+
+int rightB()
+{
+
+	double rA;
+	double rB;
+	double rC;
+	double rP;
+	double rArea;
+	double squareRoot;
+
+	cout << "Insert A: ";
+	cin >> rA;
+	cout << "Insert C: ";
+	cin >> rC;
+
+	rB = (rA*rA) + (rC*rC);
+	squareRoot = sqrt(rB * 1);
+	rP = rA + rB + squareRoot;
+	rArea = (rA * rB) / 2;
+
+	cout << "B = " << squareRoot << endl;
+	cout << "Perimeter = " << rP << endl;
+	cout << "Area = " << rArea << endl;
+
+	return 0;
+}
+
+int rightC()
+{
+
+	double rA;
+	double rB;
+	double rC;
+	double rP;
+	double rArea;
+	double squareRoot;
+
+	cout << "Insert A: ";
 	cin >> rA;
 	cout << "Insert B: ";
 	cin >> rB;
@@ -48,7 +102,7 @@ int rightTriangle()
 	cout << "C = " << squareRoot << endl;
 	cout << "Perimeter = " << rP << endl;
 	cout << "Area = " << rArea << endl;
-	*/
+	
 	return 0;
 }
 
